@@ -60,6 +60,7 @@ footer img{
 	display:block;
 	text-align:center;
 	width:150px;
+	background: linear-gradient(-30deg, #000 67%, #444 0%);
 	margin: auto
 }
 section .a:hover{
