@@ -1,0 +1,102 @@
+/*
+  Utilizando os códigos disponível em:
+  https://notabug.org/Jul10l1r4/Texto-formatacao
+*/
+body{
+	height:100%;
+	width:100%;
+	bottom:0;
+	margin:0px;
+	position:absolute;
+	overflow-x: hidden;
+	left:-5px;
+}
+header{
+	animation-name:fadein;
+	animation-duration:0.5s
+}
+section{
+	margin: auto;
+	position: relative;
+	left:0;
+	padding: 0 20px;
+	animation-name:fadein;
+	animation-duration:0.5s;
+	
+}
+section .a{
+	display:inline-block;
+	background-color:#ddd;		
+	margin:5px;
+	width:19%;
+	filter: grayscale(60%);
+	animation-name:fadein;
+	animation-duration:1s;
+	text-align:center;
+	font-family:medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
+}
+.a img{
+	height:150px;
+	width:150px;
+	animation-name:fadein;
+	animation-duration:1.4s;
+	text-align:center
+}
+footer{
+	background-color:#000;
+	position:relative;
+	bottom:0;
+	left:5px;
+	width:100%;
+	right:0;
+	text-align:center;
+	padding:30px 0px;
+	color:#fff;
+	animation-name:fadein;
+	animation-duration:2s;
+	font-family:medium-content-sans-serif-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue", sans-serif;
+}
+footer img{
+	display:block;
+	text-align:center;
+	width:150px;
+	margin: auto
+}
+section .a:hover{
+	filter: grayscale(0%);
+	background-color:#bbb;
+}
+section:hover{
+	/* Efeito ah definir */
+}/* para plataformas mobiles */
+@media (max-width:800px){
+	section{
+		right:0;
+		padding:0;
+		text-align:center;
+		width:100%
+	}
+	section .a{
+		display:block;
+		width:100%;/*calc(25% - 13px);*/
+		height:90%;
+		left:-5px;
+		padding:10px 0px;
+		filter: grayscale(0%);
+	}
+	.a img{
+		width:500px;
+		height:auto
+	}
+}
+/* Animações */
+@keyframes fadein{
+	0%{
+		opacity:0;
+		filter: grayscale(60%)
+	}
+	100%{
+		opacity:1;
+		filter: grayscale(0%)
+	}
+}
